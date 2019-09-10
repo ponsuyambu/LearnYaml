@@ -22,6 +22,9 @@ before_script:
   - set -o pipefail
 cache:
   key: common-cache
+  paths:
+    - .gradle/wrapper
+    - .gradle/caches
 
 stages:
   - build
