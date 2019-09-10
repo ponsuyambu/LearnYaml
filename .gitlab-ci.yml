@@ -30,6 +30,7 @@ stages:
 #  script:
 #    - ./gradlew -Pci --console=plain :app:lintDebug -PbuildDir=lint
 
+#This will only run in master branch pushes
 assembleDebug:
   stage: build
   script:
