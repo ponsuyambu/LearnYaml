@@ -34,7 +34,7 @@ stages:
 assembleDebug:
   stage: build
   script:
-    - ./gradlew assembleDebug
+    - ./gradlew assembleDebug --dry-run
   only:
     - branches@master
     - pushes
@@ -50,7 +50,7 @@ assembleDebug:
 unitTestCheck:
   stage: test
   script:
-    - ./gradlew -Pci --console=plain :app:testDebug
+    - ./gradlew -Pci --console=plain :app:testDebug --dry-run
   only:
     - merge_requests
     - branches@master
@@ -58,7 +58,7 @@ unitTestCheck:
 lintCheck:
   stage: test
   script:
-    - ./gradlew -Pci --console=plain :app:lintDebug -PbuildDir=lint
+    - ./gradlew -Pci --console=plain :app:lintDebug -PbuildDir=lint --dry-run
   only:
     - merge_requests
     - branches@master
