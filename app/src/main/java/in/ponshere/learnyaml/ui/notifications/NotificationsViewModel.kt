@@ -1,4 +1,4 @@
-package in.ponshere.learnyaml.ui.notifications
+package `in`.ponshere.learnyaml.ui.dashboard
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
