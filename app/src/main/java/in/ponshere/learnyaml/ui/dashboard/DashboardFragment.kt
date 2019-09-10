@@ -25,6 +25,7 @@ class DashboardFragment : Fragment() {
         val textView: TextView = root.findViewById(R.id.text_dashboard)
         dashboardViewModel.text.observe(this, Observer {
             textView.text = it
+            //test commit
         })
         return root
     }
