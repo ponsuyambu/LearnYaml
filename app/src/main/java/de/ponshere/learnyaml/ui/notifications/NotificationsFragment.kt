@@ -1,4 +1,4 @@
-package `in`.ponshere.learnyaml.ui.dashboard
+package de.ponshere.learnyaml.ui.notifications
 
 import android.os.Bundle
 import android.view.LayoutInflater
