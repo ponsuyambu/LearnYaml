@@ -36,6 +36,7 @@ assembleDebug:
     - ./gradlew assembleDebug
   only:
     - branches@master
+    - pushes
   artifacts:
     paths:
       - app/build/outputs/
