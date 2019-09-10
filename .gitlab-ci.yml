@@ -25,20 +25,38 @@ stages:
   - build
   - test
 
-lintDebug:
-  stage: build
-  script:
-    - ./gradlew -Pci --console=plain :app:lintDebug -PbuildDir=lint
+#lintDebug:
+#  stage: build
+#  script:
+#    - ./gradlew -Pci --console=plain :app:lintDebug -PbuildDir=lint
 
 assembleDebug:
   stage: build
   script:
     - ./gradlew assembleDebug
+  only:
+    - branches@master
   artifacts:
     paths:
       - app/build/outputs/
 
-debugTests:
+#debugTests:
+#  stage: test
+#  script:
+#    - ./gradlew -Pci --console=plain :app:testDebug
+
+unitTestCheck:
   stage: test
   script:
     - ./gradlew -Pci --console=plain :app:testDebug
+  only:
+    - merge_requests
+    - branches@master
+
+lintCheck:
+  stage: test
+  script:
+    - ./gradlew -Pci --console=plain :app:lintDebug -PbuildDir=lint
+  only:
+    - merge_requests
+    - branches@master
