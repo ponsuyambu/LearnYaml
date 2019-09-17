@@ -50,6 +50,7 @@ project.ext.ghToken = project.hasProperty('ghToken') ? project.getProperty('ghTo
 semanticRelease {
     releaseBranches {
         include 'master'
+        include 'feature2'
     }
     repo {
         ghToken = project.ghToken
