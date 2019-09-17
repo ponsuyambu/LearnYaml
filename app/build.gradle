@@ -46,11 +46,12 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 }
+project.ext.ghToken = project.hasProperty('ghToken') ? project.getProperty('ghToken') : System.getenv('GH_TOKEN') ?: null
 semanticRelease {
     releaseBranches {
         include 'master'
     }
     repo {
-        ghToken = "7da49d36848f1c527d70bc17e22fee38c78e4de5"
+        ghToken = project.ghToken
     }
 }
