@@ -1,0 +1,7 @@
+preRelease {
+    startingVersion = 'rc0'
+    // The bumping scheme is alpha.0 -> alpha.1 -> ... -> alpha.n
+    bump = {
+        "rc${((it - ~/^rc\./) as int) + 1}"
+    }
+}
