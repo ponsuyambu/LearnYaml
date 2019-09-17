@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         //Patch fix
         //feature
         //Breaking Change
+        //Another Breaking Change
         //patch again
         val appBarConfiguration = AppBarConfiguration(
             setOf(
