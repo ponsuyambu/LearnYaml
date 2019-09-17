@@ -9,6 +9,7 @@ apply plugin: 'de.gliderpilot.semantic-release'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.1"
+    println("Version "+ version)
     defaultConfig {
         applicationId "in.ponshere.learnyaml"
         minSdkVersion 21
@@ -48,5 +49,8 @@ dependencies {
 semanticRelease {
     releaseBranches {
         include 'master'
+    }
+    repo {
+        ghToken = "63c48543b3a22766272c1c60711d5070227cb072"
     }
 }
