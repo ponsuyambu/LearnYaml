@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         //Patch fix
         //feature
+        //Breaking Change
         //patch again
         val appBarConfiguration = AppBarConfiguration(
             setOf(
