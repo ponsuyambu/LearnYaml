@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         //Breaking Change
         //Another Breaking Change
         //patch again
+        //patch again
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.navigation_home,
