@@ -27,4 +27,7 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+task version {
+    println(version)
+}
 apply plugin: 'de.gliderpilot.semantic-release'
