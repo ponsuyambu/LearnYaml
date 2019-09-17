@@ -33,7 +33,11 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_notifications
             )
         )
+        //test
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+        //patch in master branch
+        //feature in master branch
+        //feature3 breaking change
     }
 }
