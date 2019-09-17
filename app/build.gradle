@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'de.gliderpilot.semantic-release'
+//apply plugin: 'de.gliderpilot.semantic-release'
 
 
 android {
@@ -47,7 +47,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 }
 project.ext.ghToken = project.hasProperty('ghToken') ? project.getProperty('ghToken') : System.getenv('GH_TOKEN') ?: null
-semanticRelease {
+/*semanticRelease {
     releaseBranches {
         include 'master'
         include 'feature2'
@@ -55,4 +55,4 @@ semanticRelease {
 //    repo {
 //        ghToken = project.ghToken
 //    }
-}
+} */
