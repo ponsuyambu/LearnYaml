@@ -23,6 +23,9 @@ allprojects {
         
     }
 }
+subprojects {
+    version = rootProject.version
+}
 
 task clean(type: Delete) {
     delete rootProject.buildDir
