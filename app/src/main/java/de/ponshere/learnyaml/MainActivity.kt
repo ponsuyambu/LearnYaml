@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
         //patch in master branch
-        //feature in master branch
+        //feature in master branchl
         //feature3 breaking change
     }
 }
