@@ -51,6 +51,6 @@ semanticRelease {
         include 'master'
     }
     repo {
-        ghToken = "63c48543b3a22766272c1c60711d5070227cb072"
+        ghToken = "7da49d36848f1c527d70bc17e22fee38c78e4de5"
     }
 }
