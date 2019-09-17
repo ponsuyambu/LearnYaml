@@ -52,7 +52,7 @@ semanticRelease {
         include 'master'
         include 'feature2'
     }
-    repo {
-        ghToken = project.ghToken
-    }
+//    repo {
+//        ghToken = project.ghToken
+//    }
 }
