@@ -1,5 +1,5 @@
 preRelease {
-    startingVersion = 'rc0'
+    startingVersion = 'rc1'
     // The bumping scheme is alpha.0 -> alpha.1 -> ... -> alpha.n
     bump = {
         "rc${((it - ~/^rc\./) as int) + 1}"
